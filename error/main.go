@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	defer func() {
 		i := recover()
+
 		if i != nil {
 			fmt.Printf("发生错误了%s", "panic")
 		}
